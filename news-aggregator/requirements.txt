@@ -1,0 +1,13 @@
+# Fox新闻聚合器依赖
+
+# 核心依赖
+requests>=2.28.0
+feedparser>=6.0.0
+python-dateutil>=2.8.0
+
+# 数据处理
+dataclasses>=0.6
+
+# 可选依赖
+# flask>=2.0.0  # 如果需要Web界面
+# redis>=4.0.0  # 如果需要Redis缓存
