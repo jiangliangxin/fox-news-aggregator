@@ -36,3 +36,8 @@ secrets.*
 
 # Project specific
 daily_news_report.txt
+
+# Frontend data (generated daily)
+frontend/data/
+data/*.json
+!data/.gitkeep

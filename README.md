@@ -25,6 +25,38 @@
 - **API 源**（12个）：微博、知乎、B站、抖音、头条、豆瓣、V2EX、澎湃、Epic、60秒读懂世界
 - **RSS 源**（27个）：TechCrunch、Wired、Bloomberg、FT、arXiv、Hacker News等
 
+### 前端展示
+- 🌐 **纯静态前端** - HTML + JavaScript，无框架依赖
+- 📱 **响应式设计** - 支持移动端和桌面端
+- 🎨 **主题切换** - 深色/浅色模式
+- 🔍 **实时搜索** - 前端搜索，快速过滤
+- 📅 **历史查看** - 日期选择器查看往期新闻
+- 📦 **PWA 支持** - 可离线访问
+
+## 📁 项目结构
+
+```
+fox-news-aggregator/
+├── README.md                    # 项目文档
+├── CONTRIBUTING.md              # 贡献指南
+├── LICENSE                      # MIT 许可证
+├── NEWS_UPGRADE_PLAN.md        # 升级计划
+├── generate_daily_news.py      # 主脚本
+├── news-aggregator/            # 后端核心代码
+│   ├── sources/                # 数据源（12个）
+│   ├── analysis/               # 分析引擎（5个）
+│   ├── core/                   # 核心模块（6个）
+│   ├── config/                 # 配置文件（3个）
+│   └── tests/                  # 测试文件
+├── frontend/                   # 前端代码
+│   ├── index.html              # 主页面
+│   ├── app.js                  # 应用逻辑（12KB）
+│   ├── style.css               # 样式（9KB）
+│   ├── manifest.json           # PWA 配置
+│   └── icons/                  # 图标
+└── docs/                       # 文档
+```
+
 ## 📋 开发路线图
 
 ### ✅ Phase 1: 激活分析引擎（已完成 - 2026-03-04）

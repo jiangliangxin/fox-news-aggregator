@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox每日新闻</title>
+    <meta name="description" content="聚合20+数据源的每日新闻">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <!-- 使用国内CDN镜像加载字体，带系统字体fallback -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5.3">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-inner">
+                <div class="header-left">
+                    <button id="menuToggle" class="menu-toggle" aria-label="菜单">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h1 class="brand">Fox每日新闻</h1>
+                    <span class="stats" id="stats"></span>
+                </div>
+                <div class="header-right">
+                    <input type="text" id="searchInput" class="search" placeholder="搜索...">
+                    <input type="date" id="datePicker" class="date">
+                    <button id="themeToggle" class="theme-btn">主题</button>
+                </div>
+            </div>
+        </header>
+        <div id="overlay" class="overlay"></div>
+        
+        <div class="body">
+            <aside class="sidebar">
+                <nav class="nav" id="nav"></nav>
+            </aside>
+            <main class="content" id="content"></main>
+        </div>
+        
+        <footer class="footer">
+            <span id="updateTime"></span>
+        </footer>
+    </div>
+
+    <button id="backTop" class="back-top">↑</button>
+
+    <script src="app.js?v=5.3"></script>
+</body>
+</html>
