@@ -1,33 +1,38 @@
+# OpenClaw 内部文件
+.openclaw/
+.clawhub/
+.learnings/
+
+# 个人文件
+AGENTS.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+TOOLS.md
+USER.md
+
+# 敏感目录
+skills/
+memory/
+tools/
+
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
 *.egg-info/
-*.egg
 
 # Cache
 .cache/
 *.cache
 *.log
-
 *.tmp
 *.bak
 
 # Sensitive
 .env
-.env.local
 *.pem
 *.key
 secrets.*
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
 
 # Project specific
 daily_news_report.txt
